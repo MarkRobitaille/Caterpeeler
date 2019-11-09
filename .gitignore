@@ -1,0 +1,7 @@
+*.class
+Caterpeeler/Library/
+Caterpeeler/Temp/
+*.sln
+Caterpeeler/.vs/
+Caterpeeler/obj/
+*.csproj
