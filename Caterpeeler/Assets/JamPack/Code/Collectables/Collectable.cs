@@ -41,7 +41,7 @@ public class Collectable : MonoBehaviour {
             collector.CollectItem();
 
             // Play Collection Sound
-            if(collectedSound != null){
+            if (collectedSound != null){
                 collectedSound.Play();
             }
 

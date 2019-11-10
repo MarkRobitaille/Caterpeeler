@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class BirdScript : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class BirdScript : MonoBehaviour
     public float startY;
     public float endY;
     public float speed;
+    public UnityEvent die;
 
     // Start is called before the first frame update
     void Start()
@@ -25,20 +27,23 @@ public class BirdScript : MonoBehaviour
         CheckDeath();
     }
 
-    private void CheckDeath()
+    public bool CheckDeath()
     {
 
-        if(transform.position.y >= endY)
+        /*if(transform.position.y >= endY)
         {
             if (!hiddenPlayer.hidden)
             {
-                playerCont.Die();
+                Debug.Log("We are here~");
+                die.Invoke();
             }
-            Debug.Log("We are here");
+            Debug.Log("After Invoke");
 
             Destroy(gameObject);
 
-        }
+        }*/
+
+        return transform.position.y >= endY;
 
     }
 }

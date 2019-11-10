@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class BirdController : MonoBehaviour
 {
@@ -8,7 +9,12 @@ public class BirdController : MonoBehaviour
     public GameObject birdSign;
     public GameObject bird;
 
+    private BirdScript birdScript;
     public PlayerController playerCont;
+    public HidePlayer hiddenPlayer;
+    public UnityEvent die;
+
+    private GameObject currBird;
 
     public float birdTime;
 
@@ -31,8 +37,27 @@ public class BirdController : MonoBehaviour
         if(Time.time > nextTime)
         {
             birdSign.SetActive(true);
-            Instantiate(bird);
+            currBird = Instantiate(bird);
+            birdScript = currBird.GetComponent<BirdScript>();
             nextTime = Time.time + birdTime;
+        }
+
+        CheckDeath();
+    }
+
+    private void CheckDeath()
+    {
+        if (currBird != null && birdScript.CheckDeath())
+        {
+            if (!hiddenPlayer.hidden)
+            {
+                Debug.Log("We are here~");
+                die.Invoke();
+            }
+            Debug.Log("After Invoke");
+
+            Destroy(currBird);
+
         }
     }
 }
