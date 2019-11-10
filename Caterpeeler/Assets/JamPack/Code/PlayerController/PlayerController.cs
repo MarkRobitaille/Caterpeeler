@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Events;
 
 // This controls the player
 public class PlayerController : MonoBehaviour {
@@ -19,19 +18,11 @@ public class PlayerController : MonoBehaviour {
     // The Rigidbody is needed to move items within the physics system
     public Rigidbody2D playerRigidbody;
 
-    public HingeJoint2D chain1;
-    public HingeJoint2D chain2;
-    public HingeJoint2D chain3;
-    public HingeJoint2D chain4;
-    public HingeJoint2D chain5;
-
     [Header(" *** Player State Information ***")]
 
     // is the player activated or not? 
     public bool autoStart = true;
     public bool isActivated = true;
-
-    public UnityEvent deathEvent;
 
     // Use this for initialization - 
     // Start is called automatically when the object starts for the first time
@@ -57,7 +48,9 @@ public class PlayerController : MonoBehaviour {
             // this will return us a value for x and y between -1 and 1
             // you can also do them seperately and handle the x axis and y axis each on thier own float
 
+
             // Physics - player
+            
 
             if(buttonDown){
                 playerRigidbody.AddForce(inputVector * boostForce);
@@ -71,25 +64,5 @@ public class PlayerController : MonoBehaviour {
     // Allows other scripts to get information about this script without making variables public. 
     public bool isActive() {
         return isActivated;
-    }
-
-    public void Die()
-    {
-        isActivated = false;
-
-        // Explode caterpeeler
-        Explode();
-       
-        // Move to event
-        deathEvent.Invoke();
-    }
-
-    public void Explode()
-    {
-        Destroy(chain1);
-        Destroy(chain2);
-        Destroy(chain3);
-        Destroy(chain4);
-        Destroy(chain5);
     }
 }
