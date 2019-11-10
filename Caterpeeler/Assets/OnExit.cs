@@ -1,9 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class OnExit : MonoBehaviour
 {
+    public UnityEvent die;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +21,17 @@ public class OnExit : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D col)
     {
-        Destroy(col.gameObject);
+        if (col.gameObject.tag == "Player")
+        {
+            if (die != null)
+            {
+                Debug.Log("TIME TO DIEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE");
+            } else
+            {
+                Debug.Log("IMMORTAL PILLAR");
+            }
+            
+            die.Invoke();
+        }
     }
 }
