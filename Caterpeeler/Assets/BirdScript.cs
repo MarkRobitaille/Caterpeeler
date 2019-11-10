@@ -7,7 +7,7 @@ public class BirdScript : MonoBehaviour
 {
 
     public HidePlayer hiddenPlayer;
-    public PlayerController playerCont;
+    //public PlayerController playerCont;
     public float startY;
     public float endY;
     public float speed;
@@ -24,26 +24,26 @@ public class BirdScript : MonoBehaviour
     {
         transform.position = new Vector2(0f, transform.position.y + speed);
 
-        CheckDeath();
+        if(CheckDeath())
+        {
+            startY = (-1)*Random.Range(400f, 200f);
+            transform.position = new Vector2(0f, startY);
+        }
+
     }
 
     public bool CheckDeath()
     {
 
-        /*if(transform.position.y >= endY)
-        {
-            if (!hiddenPlayer.hidden)
-            {
-                Debug.Log("We are here~");
-                die.Invoke();
-            }
-            Debug.Log("After Invoke");
-
-            Destroy(gameObject);
-
-        }*/
-
         return transform.position.y >= endY;
 
+    }
+
+    public void OnTriggerEnter2D(Collider2D col)
+    {
+        if (col.gameObject.tag == "Player" && !hiddenPlayer.hidden)
+        {
+            die.Invoke();
+        }
     }
 }
