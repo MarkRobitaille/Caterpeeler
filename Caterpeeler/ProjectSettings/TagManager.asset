@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Hideable
   layers:
   - Default
   - TransparentFX
@@ -43,4 +44,10 @@ TagManager:
     locked: 0
   - name: Pillar
     uniqueID: 2913591635
+    locked: 0
+  - name: Hideable
+    uniqueID: 329938641
+    locked: 0
+  - name: Birb
+    uniqueID: 1379692273
     locked: 0
