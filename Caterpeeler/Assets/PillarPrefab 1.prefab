@@ -31,7 +31,11 @@ Transform:
   m_GameObject: {fileID: 460039460539151525}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -4.89, y: 3.96, z: 0}
+<<<<<<< HEAD
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+=======
+  m_LocalScale: {x: 1, y: 1, z: 1}
+>>>>>>> master
   m_Children:
   - {fileID: 5044549045149758159}
   - {fileID: 5044549045988669792}
@@ -57,7 +61,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonDown: 0
   inputVector: {x: 0, y: 0}
+<<<<<<< HEAD
   movementForce: 13
+=======
+  movementForce: 13.05
+>>>>>>> master
   boostForce: 0
   playerRigidbody: {fileID: 492014760469660249}
   chain1: {fileID: 5044549045149758156}
@@ -67,11 +75,17 @@ MonoBehaviour:
   chain5: {fileID: 5044549046180579914}
   autoStart: 1
   isActivated: 1
+<<<<<<< HEAD
   deathEvent:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+=======
+  winScreenScene: WinScene
+  gameOverScreenScene: GameOverScene
+  deathTime: 3
+>>>>>>> master
 --- !u!58 &480185653060181517
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -171,12 +185,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemType: 0
   collectedItems: 0
-  triggerEventAtCountReached: 0
+  triggerEventAtCountReached: 1
   resetWhenCollected: 1
-  goalNumberToReach: 10
+  goalNumberToReach: 1
   triggerWhenGoalReached:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 576364921906905731}
+        m_MethodName: playerWin
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   totalLifetimeCount: 0
@@ -327,7 +352,11 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
+<<<<<<< HEAD
   m_ConnectedAnchor: {x: 0.04600003, y: -0.9889997}
+=======
+  m_ConnectedAnchor: {x: 0.04599996, y: -0.9890008}
+>>>>>>> master
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -470,7 +499,11 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
+<<<<<<< HEAD
   m_ConnectedAnchor: {x: -0.034500036, y: -1.6674987}
+=======
+  m_ConnectedAnchor: {x: -0.03450024, y: -1.6674998}
+>>>>>>> master
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -613,7 +646,11 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
+<<<<<<< HEAD
   m_ConnectedAnchor: {x: 0, y: -0.565218}
+=======
+  m_ConnectedAnchor: {x: 0, y: -0.565217}
+>>>>>>> master
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -756,7 +793,11 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
+<<<<<<< HEAD
   m_ConnectedAnchor: {x: 0.034500036, y: -1.6790012}
+=======
+  m_ConnectedAnchor: {x: 0.03450024, y: -1.6790012}
+>>>>>>> master
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -899,7 +940,11 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
+<<<<<<< HEAD
   m_ConnectedAnchor: {x: -0.013360994, y: -0.08171121}
+=======
+  m_ConnectedAnchor: {x: -0.013360983, y: -0.08171121}
+>>>>>>> master
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -999,6 +1044,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: PillarPrefab (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 7132779421660388093, guid: 0bde371fd1900154cb3150ecd16298fb,
+        type: 3}
+      propertyPath: m_ConnectedRigidBody
+      value: 
+      objectReference: {fileID: 5044549045564087318}
+    - target: {fileID: 7132779421660388093, guid: 0bde371fd1900154cb3150ecd16298fb,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.x
+      value: -0.02299998
+      objectReference: {fileID: 0}
+    - target: {fileID: 7132779421660388093, guid: 0bde371fd1900154cb3150ecd16298fb,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.y
+      value: -1.6215
+      objectReference: {fileID: 0}
     - target: {fileID: 7132779421660388089, guid: 0bde371fd1900154cb3150ecd16298fb,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1069,6 +1129,7 @@ PrefabInstance:
       propertyPath: m_Color.b
       value: 0.9150943
       objectReference: {fileID: 0}
+<<<<<<< HEAD
     - target: {fileID: 7132779421660388093, guid: 0bde371fd1900154cb3150ecd16298fb,
         type: 3}
       propertyPath: m_ConnectedRigidBody
@@ -1084,6 +1145,8 @@ PrefabInstance:
       propertyPath: m_ConnectedAnchor.y
       value: -1.6215
       objectReference: {fileID: 0}
+=======
+>>>>>>> master
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0bde371fd1900154cb3150ecd16298fb, type: 3}
 --- !u!4 &5044549046180579918 stripped

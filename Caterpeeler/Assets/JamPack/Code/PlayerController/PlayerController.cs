@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 // This controls the player
 public class PlayerController : MonoBehaviour {
@@ -31,7 +32,10 @@ public class PlayerController : MonoBehaviour {
     public bool autoStart = true;
     public bool isActivated = true;
 
-    public UnityEvent deathEvent;
+    public string winScreenScene = "WinScene";
+    //public UnityEvent deathEvent;
+    public string gameOverScreenScene = "GameOverScene";
+    public float deathTime;
 
     // Use this for initialization - 
     // Start is called automatically when the object starts for the first time
@@ -67,6 +71,11 @@ public class PlayerController : MonoBehaviour {
         }
     }
 
+    public void playerWin()
+    {
+        SceneManager.LoadScene(winScreenScene);
+    }
+
     // Basic Accessor methods
     // Allows other scripts to get information about this script without making variables public. 
     public bool isActive() {
@@ -79,9 +88,18 @@ public class PlayerController : MonoBehaviour {
 
         // Explode caterpeeler
         Explode();
-       
+
+        StartCoroutine(DoDeathEvent(deathTime));
         // Move to event
-        deathEvent.Invoke();
+        //deathEvent.Invoke();
+    }
+
+    IEnumerator DoDeathEvent(float time)
+    {
+        Debug.Log("I AM LOADING THE GAME OVER SCREEN");
+        yield return new WaitForSeconds(time);
+        //deathEvent.Invoke();
+        SceneManager.LoadScene(gameOverScreenScene);
     }
 
     public void Explode()
