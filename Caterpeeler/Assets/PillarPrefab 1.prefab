@@ -31,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 460039460539151525}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -4.89, y: 3.96, z: 0}
-  m_LocalScale: {x: 1.15, y: 1.15, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5044549045149758159}
   - {fileID: 5044549045988669792}
@@ -57,11 +57,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonDown: 0
   inputVector: {x: 0, y: 0}
-  movementForce: 5
+  movementForce: 30
   boostForce: 0
   playerRigidbody: {fileID: 0}
+  chain1: {fileID: 5044549045149758156}
+  chain2: {fileID: 5044549045988669793}
+  chain3: {fileID: 5044549044845146382}
+  chain4: {fileID: 5044549045564087319}
+  chain5: {fileID: 5044549046180579914}
   autoStart: 1
   isActivated: 1
+  winScreenScene: WinScene
+  gameOverScreenScene: GameOverScene
+  deathTime: 3
 --- !u!58 &480185653060181517
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -134,7 +142,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1381375661
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: 66fe3ec3f70875f45b7dcd3c1a194f7e, type: 3}
   m_Color: {r: 0.8773585, g: 0.25076756, b: 0.15312389, a: 1}
@@ -161,12 +169,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemType: 0
   collectedItems: 0
-  triggerEventAtCountReached: 0
+  triggerEventAtCountReached: 1
   resetWhenCollected: 1
   goalNumberToReach: 10
   triggerWhenGoalReached:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 576364921906905731}
+        m_MethodName: playerWin
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   totalLifetimeCount: 0
@@ -289,7 +308,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1381375661
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 9682ab935e9270442810f287b08b4470, type: 3}
   m_Color: {r: 0.8773585, g: 0.25076756, b: 0.15312389, a: 1}
@@ -317,7 +336,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.046000008, y: -0.98899996}
+  m_ConnectedAnchor: {x: 0.04599996, y: -0.98900026}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -432,7 +451,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1381375661
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: 9682ab935e9270442810f287b08b4470, type: 3}
   m_Color: {r: 0.22797751, g: 0.8679245, b: 0.118725546, a: 1}
@@ -460,7 +479,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: -0.034500126, y: -1.6675001}
+  m_ConnectedAnchor: {x: -0.03450024, y: -1.6675001}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -575,7 +594,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1381375661
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   m_Color: {r: 0.9622642, g: 0.5254902, b: 0.105882354, a: 1}
@@ -718,7 +737,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1381375661
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 9682ab935e9270442810f287b08b4470, type: 3}
   m_Color: {r: 0.18854123, g: 0.16862746, b: 0.96862745, a: 1}
@@ -746,7 +765,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.034500126, y: -1.679}
+  m_ConnectedAnchor: {x: 0.03450024, y: -1.6790001}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -861,7 +880,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1381375661
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: 9682ab935e9270442810f287b08b4470, type: 3}
   m_Color: {r: 0.8784314, g: 0.85346794, b: 0.15294117, a: 1}
@@ -889,7 +908,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: -0.013360977, y: -0.081711195}
+  m_ConnectedAnchor: {x: -0.013360983, y: -0.08171119}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -1044,6 +1063,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7132779421660388093, guid: 0bde371fd1900154cb3150ecd16298fb,
+        type: 3}
+      propertyPath: m_ConnectedRigidBody
+      value: 
+      objectReference: {fileID: 5044549045564087318}
+    - target: {fileID: 7132779421660388093, guid: 0bde371fd1900154cb3150ecd16298fb,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.x
+      value: -0.02299998
+      objectReference: {fileID: 0}
+    - target: {fileID: 7132779421660388093, guid: 0bde371fd1900154cb3150ecd16298fb,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.y
+      value: -1.6215
+      objectReference: {fileID: 0}
     - target: {fileID: 7132779421660388092, guid: 0bde371fd1900154cb3150ecd16298fb,
         type: 3}
       propertyPath: m_Color.r
@@ -1059,21 +1093,6 @@ PrefabInstance:
       propertyPath: m_Color.b
       value: 0.9150943
       objectReference: {fileID: 0}
-    - target: {fileID: 7132779421660388093, guid: 0bde371fd1900154cb3150ecd16298fb,
-        type: 3}
-      propertyPath: m_ConnectedRigidBody
-      value: 
-      objectReference: {fileID: 5044549045564087318}
-    - target: {fileID: 7132779421660388093, guid: 0bde371fd1900154cb3150ecd16298fb,
-        type: 3}
-      propertyPath: m_ConnectedAnchor.x
-      value: -0.023000242
-      objectReference: {fileID: 0}
-    - target: {fileID: 7132779421660388093, guid: 0bde371fd1900154cb3150ecd16298fb,
-        type: 3}
-      propertyPath: m_ConnectedAnchor.y
-      value: -1.6215003
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0bde371fd1900154cb3150ecd16298fb, type: 3}
 --- !u!4 &5044549046180579918 stripped
@@ -1085,6 +1104,12 @@ Transform:
 --- !u!50 &5044549046180579912 stripped
 Rigidbody2D:
   m_CorrespondingSourceObject: {fileID: 7132779421660388095, guid: 0bde371fd1900154cb3150ecd16298fb,
+    type: 3}
+  m_PrefabInstance: {fileID: 2665409384446267575}
+  m_PrefabAsset: {fileID: 0}
+--- !u!233 &5044549046180579914 stripped
+HingeJoint2D:
+  m_CorrespondingSourceObject: {fileID: 7132779421660388093, guid: 0bde371fd1900154cb3150ecd16298fb,
     type: 3}
   m_PrefabInstance: {fileID: 2665409384446267575}
   m_PrefabAsset: {fileID: 0}
