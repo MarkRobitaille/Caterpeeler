@@ -42,6 +42,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: please work
+    uniqueID: 740506989
+    locked: 0
   - name: Pillar
     uniqueID: 2913591635
     locked: 0
