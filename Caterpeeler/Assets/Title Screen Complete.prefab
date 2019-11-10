@@ -306,7 +306,7 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -412,8 +412,8 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "Art and music:\n\tKris Bessason\n\nDesign and programming\n\tCamila Bustos\n\tMark
-    Robitaille\n\tKris Bessason\n\tCaleb Beynon\n\nSpecial thanks to Dylan Fries\n\nMade
-    as part of the 2019 University of Manitoba CSSA Game Jam "
+    Robitaille\n\tKris Bessason\n\tCaleb Beynon\n\tCeilidh Simon\n\nSpecial thanks
+    to Dylan Fries\n\nMade as part of the 2019 University of Manitoba CSSA Game Jam "
 --- !u!1 &7630525648497002819
 GameObject:
   m_ObjectHideFlags: 0
@@ -651,7 +651,7 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -784,7 +784,7 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -1130,7 +1130,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7630525649215125736}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 495, y: 193, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1431,7 +1431,7 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -1493,8 +1493,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.40945098}
   m_AnchorMax: {x: 0.518, y: 0.5}
-  m_AnchoredPosition: {x: -6.939, y: -33}
-  m_SizeDelta: {x: 123.42, y: 7.63}
+  m_AnchoredPosition: {x: -7.4, y: -28.517998}
+  m_SizeDelta: {x: 124.36, y: -3.2046}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7630525649458164615
 CanvasRenderer:
@@ -1778,7 +1778,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 165, y: -154}
+  m_AnchoredPosition: {x: 161, y: -161}
   m_SizeDelta: {x: 95.68, y: 35.49}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7630525649675884836
@@ -1911,7 +1911,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 13.100006, y: 1}
+  m_AnchoredPosition: {x: 13.100037, y: 1}
   m_SizeDelta: {x: -328.6, y: 53.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7630525649720470137
@@ -2133,8 +2133,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -22.9, y: -119}
-  m_SizeDelta: {x: 4825.4, y: 2760.9}
+  m_AnchoredPosition: {x: -0.0013043, y: -0.0015874}
+  m_SizeDelta: {x: 2826.7, y: 2100.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7630525649881595485
 CanvasRenderer:
@@ -2245,7 +2245,7 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
