@@ -5,7 +5,8 @@ using UnityEngine.Events;
 
 public class BirdScript : MonoBehaviour
 {
-
+    public GameObject birdSign;
+    public GameObject pillar;
     public HidePlayer hiddenPlayer;
     //public PlayerController playerCont;
     public float startY;
@@ -28,6 +29,14 @@ public class BirdScript : MonoBehaviour
         {
             startY = (-1)*Random.Range(400f, 200f);
             transform.position = new Vector2(0f, startY);
+        }
+
+        if(transform.position.y >= pillar.transform.position.y-100)
+        {
+            birdSign.SetActive(true);
+        } else
+        {
+            birdSign.SetActive(false);
         }
 
     }

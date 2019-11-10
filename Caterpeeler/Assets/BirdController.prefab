@@ -44,8 +44,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   birdSign: {fileID: 0}
-  bird: {fileID: 9203574649345500588, guid: f9922673d6e65f94eb76e29cc06355ea, type: 3}
+  bird: {fileID: 0}
   playerCont: {fileID: 0}
-  birdTime: 3
-  minRand: -3
-  maxRand: 3
+  hiddenPlayer: {fileID: 0}
+  die:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  birdTime: 100
+  minRand: -100
+  maxRand: -90

@@ -46,6 +46,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9787a1920285eb042a66fca80e0d9ab6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  birdSign: {fileID: 0}
+  pillar: {fileID: 0}
   hiddenPlayer: {fileID: 0}
   startY: -100
   endY: 100

@@ -18,8 +18,8 @@ public class BirdController : MonoBehaviour
 
     public float birdTime;
 
-    public float minRand = -3f;
-    public float maxRand = 3f;
+    public float minRand = -400f;
+    public float maxRand = -200f;
 
     private float nextTime;
 
@@ -49,13 +49,6 @@ public class BirdController : MonoBehaviour
     {
         if (currBird != null && birdScript.CheckDeath())
         {
-            if (!hiddenPlayer.hidden)
-            {
-                Debug.Log("We are here~");
-                die.Invoke();
-            }
-            Debug.Log("After Invoke");
-
             Destroy(currBird);
 
         }
