@@ -23,14 +23,6 @@ public class OnExit : MonoBehaviour
     {
         if (col.gameObject.tag == "Player")
         {
-            if (die != null)
-            {
-                Debug.Log("TIME TO DIEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE");
-            } else
-            {
-                Debug.Log("IMMORTAL PILLAR");
-            }
-            
             die.Invoke();
         }
     }
