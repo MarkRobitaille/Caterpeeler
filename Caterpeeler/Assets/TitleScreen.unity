@@ -368,5 +368,71 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+<<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+    - target: {fileID: 5274243905900102280, guid: 3cac7f6ac0e7374408f97674d609b9e1,
+=======
+    - target: {fileID: 5274243906312328398, guid: 3cac7f6ac0e7374408f97674d609b9e1,
+>>>>>>> Stashed changes
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+<<<<<<< Updated upstream
+    - target: {fileID: 5274243904949838585, guid: 3cac7f6ac0e7374408f97674d609b9e1,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 13.099976
+      objectReference: {fileID: 0}
+    - target: {fileID: 5274243905045258134, guid: 3cac7f6ac0e7374408f97674d609b9e1,
+        type: 3}
+      propertyPath: m_Name
+      value: Instructions
+      objectReference: {fileID: 0}
+    - target: {fileID: 5274243906095781057, guid: 3cac7f6ac0e7374408f97674d609b9e1,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 5274243906095781057, guid: 3cac7f6ac0e7374408f97674d609b9e1,
+        type: 3}
+      propertyPath: m_Text
+      value: "Goal:\nYou are a tiny caterpillar. Eat all the\nleaves and become a
+        butterfly!\n\nControls:\n\t- W A S D or arrow keys to move\n\t- Hide under
+        leaves to get away \n\t  from the birds\n\t- Don't let the spider catch you!\n\t-
+        If you want to quit the game, walk off the \n\t  branch to return to this
+        title screen\n"
+=======
+    - target: {fileID: 5274243905045258129, guid: 3cac7f6ac0e7374408f97674d609b9e1,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -30
+      objectReference: {fileID: 0}
+    - target: {fileID: 5274243905045258129, guid: 3cac7f6ac0e7374408f97674d609b9e1,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 124.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5274243905045258129, guid: 3cac7f6ac0e7374408f97674d609b9e1,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0.015217
+      objectReference: {fileID: 0}
+    - target: {fileID: 5274243905045258129, guid: 3cac7f6ac0e7374408f97674d609b9e1,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -7.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5274243906263485164, guid: 3cac7f6ac0e7374408f97674d609b9e1,
+        type: 3}
+      propertyPath: m_Text
+      value: "Art and music:\n\tKris Bessason\n\nDesign and programming\n\tCamila
+        Bustos\n\tMark Robitaille\n\tKris Bessason\n\tCaleb Beynon\n\tCeilidh Simon\n\nSpecial
+        thanks to Dylan Fries for Unity support and John Manning for emotional support\n\nMade
+        as part of the 2019 University of Manitoba CSSA Game Jam "
+>>>>>>> Stashed changes
+      objectReference: {fileID: 0}
+>>>>>>> Player
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3cac7f6ac0e7374408f97674d609b9e1, type: 3}
