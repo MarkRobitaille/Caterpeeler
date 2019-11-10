@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class EnemyMovement : MonoBehaviour
 {
@@ -8,6 +9,7 @@ public class EnemyMovement : MonoBehaviour
     private Transform playerLocation;
     public float speed;
     public float viewDistance;
+    public UnityEvent die;
 
     // Start is called before the first frame update
     void Start()
@@ -39,8 +41,7 @@ public class EnemyMovement : MonoBehaviour
         if (col.gameObject.tag == "Player") ;
         {
             //Debug.Log("Hit the Enemy");
-            Destroy(col.gameObject);
+            die.Invoke();
         }
-
     }
 }
