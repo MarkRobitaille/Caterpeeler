@@ -42,7 +42,6 @@ public class Collectable : MonoBehaviour {
 
             // Play Collection Sound
             if (collectedSound != null){
-                Debug.Log("Play sound");
                 collectedSound.Play();
             }
 
