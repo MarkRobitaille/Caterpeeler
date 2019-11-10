@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 753298524290268177}
   - component: {fileID: 753298524290268176}
   - component: {fileID: 753298524290268183}
-  - component: {fileID: 753298524290268173}
+  - component: {fileID: 99276392199150095}
   m_Layer: 5
   m_Name: Congrats
   m_TagString: Untagged
@@ -138,7 +138,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
---- !u!114 &753298524290268173
+--- !u!114 &99276392199150095
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -147,8 +147,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 753298524290268182}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 91d904aee02dc374992e213400b59b04, type: 3}
+  m_Script: {fileID: 11500000, guid: e3093b960e8db3c4fa298ead24cbc8a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  displayTime: 6
-  titleScreenScene: TitleScreen
+  changeImmediately: 0
+  displayTime: 5
+  sceneName: TitleScreen

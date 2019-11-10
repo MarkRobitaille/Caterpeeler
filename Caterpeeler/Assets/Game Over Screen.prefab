@@ -300,7 +300,7 @@ GameObject:
   - component: {fileID: 2445237175243764236}
   - component: {fileID: 2445237175243764235}
   - component: {fileID: 2445237175243764234}
-  - component: {fileID: 2445237175243764237}
+  - component: {fileID: 1597624966191842699}
   m_Layer: 5
   m_Name: Game Over
   m_TagString: Untagged
@@ -369,7 +369,7 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: GAME OVER
---- !u!114 &2445237175243764237
+--- !u!114 &1597624966191842699
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -378,8 +378,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 2445237175243764239}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 91d904aee02dc374992e213400b59b04, type: 3}
+  m_Script: {fileID: 11500000, guid: e3093b960e8db3c4fa298ead24cbc8a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  displayTime: 2
-  titleScreenScene: TitleScreen
+  changeImmediately: 0
+  displayTime: 3
+  sceneName: TitleScreen
