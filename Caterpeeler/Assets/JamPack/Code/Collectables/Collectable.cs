@@ -23,7 +23,8 @@ public class Collectable : MonoBehaviour {
     public UnityEvent coinCollectedEvent; // for adding additional effects
 
     [Header("Effects")]
-    public AudioSource collectedSound;
+    //public AudioSource collectedSound;
+    public PlaySound soundPlayer;
 
     [Header("Debug Settings")]
     public bool DEBUG_MODE = false;
@@ -34,15 +35,13 @@ public class Collectable : MonoBehaviour {
         CollectableCollector collector = col.GetComponent<CollectableCollector>();
         // if we collided with a gameobject that has a CollectableCollector component
         if ( collector != null && collector.itemType == itemType ){
-            // Debugging
-            if(DEBUG_MODE) {  Debug.Log("DEBUG: Collectable Collided with " + col.gameObject.name); }
 
             // Add one coin to the player counter
             collector.CollectItem();
 
             // Play Collection Sound
-            if (collectedSound != null){
-                collectedSound.Play();
+            if (soundPlayer != null){
+                soundPlayer.Play();
             }
 
             // disable the coin
