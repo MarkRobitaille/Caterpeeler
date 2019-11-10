@@ -57,9 +57,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonDown: 0
   inputVector: {x: 0, y: 0}
-  movementForce: 30
+  movementForce: 13.05
   boostForce: 0
-  playerRigidbody: {fileID: 0}
+  playerRigidbody: {fileID: 492014760469660249}
   chain1: {fileID: 5044549045149758156}
   chain2: {fileID: 5044549045988669793}
   chain3: {fileID: 5044549044845146382}
@@ -171,7 +171,7 @@ MonoBehaviour:
   collectedItems: 0
   triggerEventAtCountReached: 1
   resetWhenCollected: 1
-  goalNumberToReach: 10
+  goalNumberToReach: 1
   triggerWhenGoalReached:
     m_PersistentCalls:
       m_Calls:
@@ -336,7 +336,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.04599996, y: -0.98900026}
+  m_ConnectedAnchor: {x: 0.04599996, y: -0.9890008}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -479,7 +479,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: -0.03450024, y: -1.6675001}
+  m_ConnectedAnchor: {x: -0.03450024, y: -1.6674998}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -622,7 +622,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0, y: -0.5652175}
+  m_ConnectedAnchor: {x: 0, y: -0.565217}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -765,7 +765,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.03450024, y: -1.6790001}
+  m_ConnectedAnchor: {x: 0.03450024, y: -1.6790012}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -908,7 +908,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: -0.013360983, y: -0.08171119}
+  m_ConnectedAnchor: {x: -0.013360983, y: -0.08171121}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -1008,6 +1008,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: PillarPrefab (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 7132779421660388093, guid: 0bde371fd1900154cb3150ecd16298fb,
+        type: 3}
+      propertyPath: m_ConnectedRigidBody
+      value: 
+      objectReference: {fileID: 5044549045564087318}
+    - target: {fileID: 7132779421660388093, guid: 0bde371fd1900154cb3150ecd16298fb,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.x
+      value: -0.02299998
+      objectReference: {fileID: 0}
+    - target: {fileID: 7132779421660388093, guid: 0bde371fd1900154cb3150ecd16298fb,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.y
+      value: -1.6215
+      objectReference: {fileID: 0}
     - target: {fileID: 7132779421660388089, guid: 0bde371fd1900154cb3150ecd16298fb,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1062,21 +1077,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7132779421660388093, guid: 0bde371fd1900154cb3150ecd16298fb,
-        type: 3}
-      propertyPath: m_ConnectedRigidBody
-      value: 
-      objectReference: {fileID: 5044549045564087318}
-    - target: {fileID: 7132779421660388093, guid: 0bde371fd1900154cb3150ecd16298fb,
-        type: 3}
-      propertyPath: m_ConnectedAnchor.x
-      value: -0.02299998
-      objectReference: {fileID: 0}
-    - target: {fileID: 7132779421660388093, guid: 0bde371fd1900154cb3150ecd16298fb,
-        type: 3}
-      propertyPath: m_ConnectedAnchor.y
-      value: -1.6215
       objectReference: {fileID: 0}
     - target: {fileID: 7132779421660388092, guid: 0bde371fd1900154cb3150ecd16298fb,
         type: 3}
