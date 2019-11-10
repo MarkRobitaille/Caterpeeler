@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 3724181368973622292}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.19, y: -0.95, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalScale: {x: 7.089804, y: 7.089804, z: 3.5449}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -54,7 +54,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  collectedSound: {fileID: 3724181368973622302}
+  soundPlayer: {fileID: 0}
   DEBUG_MODE: 1
 --- !u!212 &3724181368973622290
 SpriteRenderer:
@@ -90,8 +90,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 740506989
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: f8ecdaa36fbe8e94e80ed409a77c2b13, type: 3}
   m_Color: {r: 0.28644595, g: 0.6698113, b: 0.08846565, a: 1}
@@ -230,11 +230,11 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3724181368973622292}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 243144294977978202, guid: aea27d484450ba648954d4b5b17fdafd,
     type: 2}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: c457b72fea337ba4fa812dc1ea592418, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1

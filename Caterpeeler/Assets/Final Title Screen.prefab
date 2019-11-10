@@ -2345,7 +2345,8 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: "Art and music:\n\tKris Bessason\n\nDesign and programming\n\tCamila Bustos\n\tMark
     Robitaille\n\tKris Bessason\n\tCaleb Beynon\n\tCeilidh Simon\n\nSpecial thanks
-    to Dylan Fries\n\nMade as part of the 2019 University of Manitoba CSSA Game Jam "
+    to Dylan Fries and John Manning. Made as part of the 2019 University of Manitoba
+    CSSA Game Jam. "
 --- !u!1 &5274243906264098134
 GameObject:
   m_ObjectHideFlags: 0
