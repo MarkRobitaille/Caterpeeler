@@ -65,4 +65,9 @@ public class PlayerController : MonoBehaviour {
     public bool isActive() {
         return isActivated;
     }
+
+    public void Die()
+    {
+
+    }
 }
