@@ -96,7 +96,7 @@ public class PlayerController : MonoBehaviour {
 
     IEnumerator DoDeathEvent(float time)
     {
-        Debug.Log("I AM LOADING THE GAME OVER SCREEN");
+        //Debug.Log("I AM LOADING THE GAME OVER SCREEN");
         yield return new WaitForSeconds(time);
         //deathEvent.Invoke();
         SceneManager.LoadScene(gameOverScreenScene);

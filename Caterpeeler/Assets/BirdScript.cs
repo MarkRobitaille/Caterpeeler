@@ -23,7 +23,9 @@ public class BirdScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = new Vector2(0f, transform.position.y + speed);
+        transform.position = new Vector2(0f, transform.position.y + (speed * Time.deltaTime));
+
+        //Debug.Log(transform.position);
 
         if(CheckDeath())
         {

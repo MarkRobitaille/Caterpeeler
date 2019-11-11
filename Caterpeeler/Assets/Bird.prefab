@@ -49,9 +49,9 @@ MonoBehaviour:
   birdSign: {fileID: 0}
   pillar: {fileID: 0}
   hiddenPlayer: {fileID: 0}
-  startY: -100
+  startY: -200
   endY: 100
-  speed: 0.6
+  speed: 15
   die:
     m_PersistentCalls:
       m_Calls:

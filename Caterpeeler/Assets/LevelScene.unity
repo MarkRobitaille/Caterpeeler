@@ -5245,29 +5245,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1376693371460563338, guid: f9922673d6e65f94eb76e29cc06355ea,
         type: 3}
-      propertyPath: hiddenPlayer
+      propertyPath: birdSign
       value: 
-      objectReference: {fileID: 524245626}
-    - target: {fileID: 1376693371460563338, guid: f9922673d6e65f94eb76e29cc06355ea,
-        type: 3}
-      propertyPath: playerCont
-      value: 
-      objectReference: {fileID: 524245631}
-    - target: {fileID: 1376693371460563338, guid: f9922673d6e65f94eb76e29cc06355ea,
-        type: 3}
-      propertyPath: die.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 524245631}
-    - target: {fileID: 1376693371460563338, guid: f9922673d6e65f94eb76e29cc06355ea,
-        type: 3}
-      propertyPath: die.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Die
-      objectReference: {fileID: 0}
-    - target: {fileID: 1376693371460563338, guid: f9922673d6e65f94eb76e29cc06355ea,
-        type: 3}
-      propertyPath: startY
-      value: -200
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 329368145}
     - target: {fileID: 1376693371460563338, guid: f9922673d6e65f94eb76e29cc06355ea,
         type: 3}
       propertyPath: pillar
@@ -5275,9 +5255,14 @@ PrefabInstance:
       objectReference: {fileID: 524245625}
     - target: {fileID: 1376693371460563338, guid: f9922673d6e65f94eb76e29cc06355ea,
         type: 3}
-      propertyPath: birdSign
+      propertyPath: hiddenPlayer
       value: 
-      objectReference: {fileID: 329368145}
+      objectReference: {fileID: 524245626}
+    - target: {fileID: 1376693371460563338, guid: f9922673d6e65f94eb76e29cc06355ea,
+        type: 3}
+      propertyPath: die.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 524245631}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f9922673d6e65f94eb76e29cc06355ea, type: 3}
 --- !u!1001 &1570811559
