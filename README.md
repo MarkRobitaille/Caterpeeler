@@ -2,7 +2,7 @@
  
 You are the Caterpeeler! Wiggle around a tree branch and eat leaves to become a beautiful butterfly! Dodge the spiders and make sure to hide from the ominous birds flying around the tree by going under piles of leaves.
 
-Made for the CSSA Game Jam 2019 at the University of Manitoba. The theme for the game jam was "1 HP". You can download a playable build of the game on [itch.io](https://markrobitaille.itch.io/caterpeeler). Extract the files from the zip file and open caterpeeler.exe to start playing.
+Made for the CSSA Game Jam 2019 at the University of Manitoba in less than 48 hours. The theme for the game jam was "1 HP". You can download a playable build of the game on [itch.io](https://markrobitaille.itch.io/caterpeeler). Extract the files from the zip file and open caterpeeler.exe to start playing.
 
 ## Developed by:
 
